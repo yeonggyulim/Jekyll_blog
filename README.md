@@ -1,2 +1,5 @@
-# yeonggyulim.github.io
-Daily Blog in Korean
+# Project Title
+  Daily Blog
+
+# License
+  MIT
