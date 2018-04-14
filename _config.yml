@@ -32,9 +32,9 @@ background:
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: UA-117510353-1
-google_verify:
+google_verify:    google3ac8a890bd4c34d1
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
+bing_verify:      07D35117776EE16CAA5810EB0005B543
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Phoenix
