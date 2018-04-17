@@ -153,6 +153,141 @@
   <header>
     
       <div class="entry-image-index">
+        <a href="http://localhost:4000/cisco-networking-4/" title="[요약] 후니의 쉽게 쓴 시스코 네트워킹 - 4"><img src="http://localhost:4000/images/network.jpg" alt="[요약] 후니의 쉽게 쓴 시스코 네트워킹 - 4"></a>
+      </div><!-- /.entry-image -->
+    
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2018-04-17T00:00:00-07:00"><a href="http://localhost:4000/cisco-networking-4/">April 17, 2018</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Yeonggyu Lim">Yeonggyu Lim</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~1 minute
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://localhost:4000/cisco-networking-4/" rel="bookmark" title="[요약] 후니의 쉽게 쓴 시스코 네트워킹 - 4" itemprop="url">[요약] 후니의 쉽게 쓴 시스코 네트워킹 - 4</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <hr />
+
+<h2 id="-part-06-스위치를-켜라-"><span style="color:blue"> <em>Part 06 스위치를 켜라</em> </span></h2>
+<h3 id="1-spanning-tree-protocol-algorithmstp">1. Spanning Tree Protocol Algorithm(STP)</h3>
+<ul>
+  <li>스위치나 브리지에서 발생하는 루핑을 막기 위한 프로토콜</li>
+  <li>출발지-&gt;목적지 경로 2개 이상 일때 1개 빼고 끊어 두었다가 필요할 때 사용</li>
+  <li>2가지 개념
+    <ul>
+      <li>Bridge ID: 브리지나 스위치가 통신할 때 서로 확인하기 위해 가지는 번호
+        <ul>
+          <li>Bridge Priority(16비트) + Mac Address(48비트)</li>
+        </ul>
+      </li>
+      <li>Path Cost: 길을 가는데 드는 비용
+        <ul>
+          <li>1000Mbps(고정값)/10Mbps(링크의 속도: 대역폭) = 100</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>기본적인 3가지 동작
+    <ul>
+      <li>네트워크당 하나의 Root Bridge를 선정한다.</li>
+      <li>Not Root Bridge당 하나의 Root Port를 선정한다.</li>
+      <li>Segment당 하나씩의 Designated Port(지정 포트)를 선정한다.</li>
+      <li>Root Port와 Designated Port아닌 나머지 모든 포트는 막아버린다.</li>
+    </ul>
+  </li>
+  <li>STP에서 순서 정하는 단계
+    <ul>
+      <li>누가 더 작은 Root BID를 가졌는가?</li>
+      <li>루트 브리지까지의 Path Cost 값은 누가 더 작은가?</li>
+      <li>누구의 BID(Sender BID)가 더 낮은가?</li>
+      <li>누구의 포트 ID가 더 낮은가?</li>
+    </ul>
+  </li>
+  <li>Bridge가 STP 정보를 자기들끼리 주고 받기 위해 특수한 프레임 사용
+    <ul>
+      <li>BPDU(Bridge Protocol Data Unit)
+        <ul>
+          <li>Root BID: 루트 브리지의 BID</li>
+          <li>Root Path Cost: 루트 브리지까지 가는 경로값</li>
+          <li>Sender BID: 보내는 브리지의 BID</li>
+          <li>Port ID: 어떤 포트에서 보냈는지 알게 해줌</li>
+        </ul>
+      </li>
+      <li>브리지나 스위치 부팅시에 각각 포트로 BPDU를 매 2초마다 내보내면서 STP 정보 주고 받음</li>
+      <li>누가 루트 포트, 데지그네이티드 포트가 될지 결정함</li>
+    </ul>
+  </li>
+  <li>Spanning Tree Protocol 5가지 변화
+    <ul>
+      <li>Disabled: 포트 고장 or 네트워크 관리자가 포트 Shut Down
+        <ul>
+          <li>데이터 전송: X</li>
+          <li>맥 어드레스 배움: X</li>
+          <li>BPDU 주고 받음: X</li>
+        </ul>
+      </li>
+      <li>Blocking: 스위치를 맨 처음 켜거나 Disabled 포트를 관리자가 다시 살렸을 때
+        <ul>
+          <li>데이터 전송: X</li>
+          <li>맥 어드레스 배움: X</li>
+          <li>BPDU 주고 받음: O</li>
+        </ul>
+      </li>
+      <li>Listening: Switch Port =&gt; Root Port or Designated Port 선정되면 리스닝 상태
+        <ul>
+          <li>데이터 전송: X</li>
+          <li>맥 어드레스 배움: X</li>
+          <li>BPDU 주고 받음: O</li>
+        </ul>
+      </li>
+      <li>Learning: Listening =&gt; Forwarding Delay Default 15초 버티면 러닝 상태
+        <ul>
+          <li>데이터 전송: X</li>
+          <li>맥 어드레스 배움: O</li>
+          <li>BPDU 주고 받음: O</li>
+        </ul>
+      </li>
+      <li>Forwarding: 스위치 포트가 러닝 상태에서 다시 포워딩 딜레이 디폴트 15초 버틴 상태
+        <ul>
+          <li>데이터 전송: O</li>
+          <li>맥 어드레스 배움: O(브리지 테이블 만듦)</li>
+          <li>BPDU 주고 받음: O</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="2-virtual-lan가상의-랜">2. Virtual Lan(가상의 랜)</h3>
+<ul>
+  <li>스위치가 콜리전 도메인 나눠줌 + 가상랜 기능</li>
+  <li>스위치만 지원 O &lt;-&gt; 허브, 브리지, 라우터는 지원 X</li>
+  <li>한 대의 스위치를 여러 개의 네트워크로 나누기 위해 사용</li>
+  <li>스위치가 VLAN으로 나누어지면(브로드캐스트 도메인) VLAN간의 통신은 라우터를 통해 가능</li>
+  <li>스위치 안에 있는 스위치 각각을 VLAN이라 함</li>
+  <li>Trunk Port: 하나의 포트를 통해 여러 개 VLAN 전송하게 하는 포트</li>
+  <li>트렁킹: 여러 개의 VLAN을 한 번에 전송하는 방식</li>
+  <li>VTP(VLAN Trunking Protocol): 스위치 간 VLAN 정보 주고받아 일치시키기 위한 프로토콜</li>
+</ul>
+
+<hr />
+<h2 id="참조">참조</h2>
+<ul>
+  <li><a href="http://www.kyobobook.co.kr/search/SearchCommonMain.jsp">후니의 쉽게 쓴 시스코 네트워킹</a></li>
+</ul>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    
+      <div class="entry-image-index">
         <a href="http://localhost:4000/cisco-networking-3/" title="[요약] 후니의 쉽게 쓴 시스코 네트워킹 - 3"><img src="http://localhost:4000/images/network.jpg" alt="[요약] 후니의 쉽게 쓴 시스코 네트워킹 - 3"></a>
       </div><!-- /.entry-image -->
     
