@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: http://yeonggyulim.github.io/sitemap.xml
