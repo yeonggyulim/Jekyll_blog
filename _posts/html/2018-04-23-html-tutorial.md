@@ -217,7 +217,7 @@ image:
 ---
 ### 22. HTML JavaScript
   - JavaScript makes HTML pages more dynamic and interactive.
-  - The HTML <script> Tag
+  - The HTML `<script>` Tag
     - client-side script (JavaScript)
     - contains scripting statements, or points to an external script file(src)
     - image manipulation, form validation, dynamic changes of content 등에 사용
@@ -231,7 +231,7 @@ image:
       - `document.getElementById("demo").style.backgroundColor = "yellow";`
     - JavaScript can change HTML attributes
       - `document.getElementById("image").src = "picture.gif";`
-  - The HTML <noscript> Tag
+  - The HTML `<noscript>` Tag
     - 브라우저에서 script 못 읽을 시에 대체 내용 제공
 
 ---
@@ -246,19 +246,19 @@ image:
 
 ---
 ### 24. HTML Head
-  - The HTML <head> Element
+  - The HTML `<head>` Element
     - html과 body 태그 사이에 위치, metadata(data about data)의 container
     - metadata: data about the HTML document
     - 주로 document title, character set, styles, links, scripts 등을 정의
     - 주요 태그: `<title>` `<style>` `<meta>` `<link>` `<script>` `<base>`
-  - The HTML <title> Element
+  - The HTML `<title>` Element
     - title of the document 정의, 모든 html 문서에 필요
     - 브라우저 탭, 즐겨찾기, 검색엔진 결과 위해 필요
-  - The HTML <style> Element
+  - The HTML `<style>` Element
     - define style information for a single HTML page
-  - The HTML <link> Element
+  - The HTML `<link>` Element
     - used to link to external style sheets
-  - The HTML <meta> Element
+  - The HTML `<meta>` Element
     - character set, page description, keywords, author 등을 명시
     - character set: `<meta charset="UTF-8">`
     - description of web page: `<meta name="description" content="Web tutorials">`
@@ -270,12 +270,12 @@ image:
     - viewport: user에게 웹 페이지가 보이는 부분, device(핸드폰 등)에 따라 달라짐
     - `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
     - 모든 웹 페이지에 이 `<meta>` viewport element 넣어야 함
-  - The HTML <script> Element
+  - The HTML `<script>` Element
     - define client-side JavaScripts
-  - The HTML <base> Element
+  - The HTML `<base>` Element
     - base URL과 base target 지정(해당 웹페이지의 모든 relative URL에 대해)
     - `<base href="https://www.w3schools.com/images/" target="_blank">`
-  - Omitting <html>, <head> and <body>?
+  - Omitting `<html>`, `<head>` and `<body>`?
     - HTML5 standard에서는 `<html>` `<body>` `<head>` tag 모두 생략 가능
 
 ---
@@ -291,7 +291,7 @@ image:
     - `<aside>` - Defines content aside from the content (like a sidebar)
     - `<footer>` - Defines a footer for a document or a section
     - `<details>` - Defines additional details
-    - `<summary>` - Defines a heading for the <details> element
+    - `<summary>` - Defines a heading for the `<details>` element
   - HTML Layout Techniques(multicolumm layout 만드는 4가지 방법)
     - HTML tables
       - `<table>` 태그는 layout tool을 위한게 아님. page layout으로 사용 비추천
@@ -349,14 +349,14 @@ image:
 
 ---
 ### 27. HTML Computer Code Elements (monospace font)
-  - HTML <kbd> For Keyboard Input
+  - HTML `<kbd>` For Keyboard Input
     - `<kbd>`: user input 나타냄, keyboard input or voice commands
-  - HTML <samp> For Program Output
+  - HTML `<samp>` For Program Output
     - `<samp>`: program 이나 computing system output 나타냄
-  - HTML <code> For Computer Code
+  - HTML `<code>` For Computer Code
     - `<code>`: fragment of computer code 나타냄, 줄내림 안됨
     - `<pre><code>`: 로 쓰면 줄내림 가능
-  - HTML <var> For Variables
+  - HTML `<var>` For Variables
     - `<var>`: variable 나타냄, 수학 표현, 변수 등
     - `Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup>.`
 
@@ -397,7 +397,7 @@ image:
   - The Most Important Differences from HTML
     - Document Structure
       - XHTML DOCTYPE is mandatory
-      - The xmlns attribute in <html> is mandatory
+      - The xmlns attribute in `<html>` is mandatory
       - `<html>` `<head>` `<title>` `<body>` are mandatory
     - XHTML Elements
       - XHTML elements must be properly nested
