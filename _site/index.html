@@ -1,0 +1,1465 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<!-- adsense script -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2371840034282184",
+    enable_page_level_ads: true
+  });
+</script>
+
+<meta charset="utf-8">
+<title>공부와 여행 블로그 &#8211; Development Blog</title>
+<meta name="description" content="공부와 여행을 기록하는 블로그를 만들어 보고 싶습니다.">
+<meta name="keywords" content="Jekyll, theme, themes, responsive, blog, modern">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="공부와 여행 블로그">
+<meta property="og:description" content="공부와 여행을 기록하는 블로그를 만들어 보고 싶습니다.">
+<meta property="og:url" content="http://localhost:4000/">
+<meta property="og:site_name" content="Development Blog">
+
+<!-- for web master -->
+<meta name="google-site-verification" content="google3ac8a890bd4c34d1">
+<meta name="msvalidate.01" content="07D35117776EE16CAA5810EB0005B543">
+
+
+<link rel="canonical" href="http://localhost:4000/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Development Blog Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- for Bing web master -->
+<meta name="msvalidate.01" content="07D35117776EE16CAA5810EB0005B543" />
+
+
+<!-- Load Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- for Mathjax -->
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+</head>
+
+<body id="post-index" class="feature">
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="http://localhost:4000/">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://localhost:4000/images/profile.jpeg" alt="Yeonggyu Lim photo" class="author-photo">
+					<h4>Yeonggyu Lim</h4>
+					<p>Development Blog</p>
+				</li>
+				<li><a href="http://localhost:4000/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+				<li>
+					<a href="https://facebook.com/yeonggyu0128" target="_blank"><i class="fa fa-fw fa-facebook"></i> Facebook</a>
+				</li>
+				<li>
+					<a href="https://instagram.com/yeonggyulim" target="_blank"><i class="fa fa-fw fa-instagram"></i> Instagram</a>
+				</li>
+				<li>
+					<a href="https://github.com/yeonggyulim" target="_blank"><i class="fa fa-fw fa-github"></i> GitHub</a>
+				</li>
+				<li>
+					<a href="https:///yeonggyulim.github.io/resume/" target="_blank"><i class="fa fa-fw fa-file-text"></i> Resume</a>
+				</li>
+				<!--
+				
+				
+
+				
+
+				
+				
+
+				
+				
+					-->
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<!-- 서브 메뉴 들어가는 것 수정
+		<li>
+			<a href="#">Study</a>
+			<ul class="dl-submenu">
+			-->
+				<li><a href="http://localhost:4000/posts/">All Posts</a></li>
+				<li><a href="http://localhost:4000/tags/">All Tags</a></li>
+				<!--
+			</ul>
+		</li>
+	-->
+		<!-- 수정(Study와 Travel 나누고, Study안에 밑에 메뉴로도 나눌 수 있으면 좋겠음)
+		<li>
+			<a hre="#">&emsp;-&nbsp;Network</a>
+		</li>
+		-->
+		
+
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+<div class="entry-header">
+  
+  
+    <div class="entry-image">
+      <img src="http://localhost:4000/images/intro-bg.jpg" alt="공부와 여행 블로그">
+    </div><!-- /.entry-image -->
+  
+  <div class="header-title">
+    <div class="header-title-wrap">
+      <h1>Development Blog</h1>
+      <h2>공부와 여행 블로그</h2>
+    </div><!-- /.header-title-wrap -->
+  </div><!-- /.header-title -->
+</div><!-- /.entry-header -->
+
+<div id="main" role="main">
+  
+<article class="hentry">
+  <header>
+    
+      <div class="entry-image-index">
+        <a href="http://localhost:4000/java/" title="Java tutorial"><img src="http://localhost:4000/images/java.png" alt="Java tutorial"></a>
+      </div><!-- /.entry-image -->
+    
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2018-04-30T00:00:00-07:00"><a href="http://localhost:4000/java/">April 30, 2018</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Yeonggyu Lim">Yeonggyu Lim</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~1 minute
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://localhost:4000/java/" rel="bookmark" title="Java tutorial" itemprop="url">Java tutorial</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <hr />
+<h3 id="1-java란">1. Java란?</h3>
+<ul>
+  <li>Java 프로그램의 동작
+    <ul>
+      <li>코드 작성 (vim Helloworld.java)</li>
+      <li>컴퓨터가 실행할 수 있는 형로 코드 컴파일(javac Helloworld.java)</li>
+      <li>컴파일된 프로그램 실행(java Helloworld )</li>
+    </ul>
+  </li>
+  <li>Java 용어
+    <ul>
+      <li>Java SE(Java Platform, Standard Edition): 자바의 표준안
+        <ul>
+          <li>자바가 어떤 문법 구을 가졌는지, 소프트웨어의 설계도(명세서)</li>
+        </ul>
+      </li>
+      <li>JDK(Java Development Kit): 표준안에 따라 만들어진 구체적인 소프트웨어
+        <ul>
+          <li>자바 개발자라면 JDK 설치해야함(컴파일러 + JRE포함)</li>
+          <li>개발자를 위한 자바 버전</li>
+        </ul>
+      </li>
+      <li>JRE(Java Runtime Environment): 자바 동작하는데 필요한 각종 도구
+        <ul>
+          <li>JVM, 라이브러리, 각종 파일 포함</li>
+          <li>자바로 만들어진 프로그램 구동 시에 필요</li>
+          <li>일반인을 위한 자바 버전</li>
+        </ul>
+      </li>
+      <li>JVM(Java Virtual Machine): 자바가 실제로 구동하는 환경
+        <ul>
+          <li>자바로 만들어진 소프트웨어는 JVM 가상 환경에서 구동</li>
+          <li>하드웨어 운영체제에 따른 호환성 문제는 OS버전에 따른 JVM이 해결</li>
+          <li>자바 프로그램을 어떤 환경에서도 실행하게 하는 역할
+<img src="/images/java/java-1.jpg" alt="" /></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>JDK의 분류
+    <ul>
+      <li>Java SE(Standard Edition)
+        <ul>
+          <li>자바의 핵심으로 일반적으로 자바라고 하면 Java SE를 의미한다.</li>
+        </ul>
+      </li>
+      <li>Java EE (Enterprise Edition)
+        <ul>
+          <li>기업용 시장에서 사용하는 자바 개발환경</li>
+        </ul>
+      </li>
+      <li>Jave Me (Micro Edition)
+        <ul>
+          <li>모바일 개발을 위해서 사용하는 자바 버전</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Java 설치
+    <ul>
+      <li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">JAVA SE 설치</a></li>
+      <li>위 링크에서 약관에 동의 후 맞는 OS 버전 설치</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h3 id="2-실행">2. 실행</h3>
+<ul>
+  <li>코드(code) or 소스(source): 프로그램 설계도 or 프로그램 그 자체</li>
+  <li>컴파일(compile): 자바(사람) 언어 -&gt; 컴퓨터 언어로 변환해주는 과정
+    <ul>
+      <li>javac: 자바의 컴파일러</li>
+      <li>ex) javac Helloworld.java</li>
+      <li>class 파일: 컴파일된 파일(실행 파일)</li>
+    </ul>
+  </li>
+  <li>실행(execute): 런처를 이용해 class 파일 실행
+    <ul>
+      <li>런처: 자바 가상 머신에서 우리가 만든 코드 동작하도록 함</li>
+      <li>우리가 만든 프로그램은 최종적으로 자바 가상머신을 통해 동작
+<img src="/images/java/java-2.gif" alt="" /></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h3 id="3-이클립스개발도구">3. 이클립스(개발도구)</h3>
+<ul>
+  <li>Eclipse: 가장 대표적인 자바의 개발도구
+    <ul>
+      <li>IDE(Integrated Development Environment)(통합 개발 환경) 소프트웨어로 분류</li>
+      <li>IDE: 개발 필요 도구(소스 편집기, 컴파일러, 디버거, 유닛테스트) 결합된 거대 소프트웨어</li>
+      <li><a href="http://www.eclipse.org/downloads/">Eclipse 설치</a></li>
+    </ul>
+  </li>
+  <li>Eclipse 기능
+    <ul>
+      <li>View 관리
+        <ul>
+          <li>Window -&gt; Show View에서 여러 뷰 관리</li>
+          <li>View 종류
+            <ul>
+              <li>Package Explorer: 프로젝트 관리</li>
+              <li>Outline: 소스코드의 문법적인 요소 시각적으로 표시</li>
+              <li>Problems: 소스코드 문제 있을 때 알려줌</li>
+              <li>Console: 출력된 결가 Console 뷰로 표시</li>
+              <li>가운데 부분: editor</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Window 관리
+        <ul>
+          <li>Window -&gt; Open Perspective -&gt; Other에서 윈도우 관리
+            <ul>
+              <li>Window 종류
+                <ul>
+                  <li>Debug Perspective: Debug시에 가장 효율적인 view 방식으로 배치해줌</li>
+                  <li>Java Perspective: 처음에 켜진 상태(가장 많이 사용)</li>
+                  <li>자주 사용되는 Perspective 오른쪽 위에서 선택 가능</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Eclipse 시작(프로젝트 -&gt; 패키지 -&gt; 클래스 순서로 생성)
+    <ul>
+      <li>New 프로젝트
+        <ul>
+          <li>Package Explorer -&gt; New -&gt; Java Project</li>
+          <li>bin(binary): .class 파일(실행 파일), 컴퓨터 이해</li>
+          <li>src(source): .java 파일(작성 코드 파일), 사람 이해</li>
+        </ul>
+      </li>
+      <li>New 패키지
+        <ul>
+          <li>New -&gt; Package</li>
+          <li>디렉토리와 같은 원리(같은 파일일 때 구분)</li>
+          <li>도메인 사용(다른 유저와 중복하지 않기 위한 관습, 거꾸로 사용)</li>
+          <li>.이 디렉토리 구분 단위</li>
+          <li>ex) org.opentutorials.javatutorials.eclipse</li>
+        </ul>
+      </li>
+      <li>Class 시작(자바 프로그램 가장 기본적인 단위)
+        <ul>
+          <li>New -&gt; Class</li>
+          <li>패키지 소속 클래스 생성
+<img src="/images/java/java-3.png" alt="" /></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h2 id="참조">참조</h2>
+<ul>
+  <li><a href="https://opentutorials.org/course/1223">생활코딩_Java</a></li>
+</ul>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    
+      <div class="entry-image-index">
+        <a href="http://localhost:4000/html-tutorial/" title="html5 튜토리얼, html5 입문"><img src="http://localhost:4000/images/html5.png" alt="html5 튜토리얼, html5 입문"></a>
+      </div><!-- /.entry-image -->
+    
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2018-04-23T00:00:00-07:00"><a href="http://localhost:4000/html-tutorial/">April 23, 2018</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Yeonggyu Lim">Yeonggyu Lim</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~8 minutes
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://localhost:4000/html-tutorial/" rel="bookmark" title="html5 튜토리얼, html5 입문" itemprop="url">html5 튜토리얼, html5 입문</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <hr />
+<h3 id="1-what-is-html">1. What is HTML?</h3>
+<ul>
+  <li>웹 페이지 만들기 위한 표준 마크업 언어</li>
+  <li><strong>Hyper Text Markup Language</strong> 줄임말</li>
+  <li>HTML elements은 tags로 나타냄</li>
+</ul>
+
+<hr />
+
+<h3 id="2-a-simple-html-document">2. A Simple HTML Document</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;title&gt;</span>Page Title<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+
+<span class="nt">&lt;h1&gt;</span>My First Heading<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span>My first paragraph.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+<p><code class="highlighter-rouge"><span class="cp">&lt;!DOCTYPE html&gt;</span></code>는 declaration, 나머지는 elements</p>
+<ul>
+  <li><code class="highlighter-rouge"><span class="cp">&lt;!DOCTYPE html&gt;</span></code>: defines this document to be HTML5</li>
+  <li><code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code>: the root element of an HTML page</li>
+  <li><code class="highlighter-rouge">&lt;head&gt;</code>: contains meta information about the document</li>
+  <li><code class="highlighter-rouge">&lt;title&gt;</code>: specifies a title for the document</li>
+  <li><code class="highlighter-rouge">&lt;body&gt;</code>: contains the visible page content</li>
+  <li><code class="highlighter-rouge">&lt;h1&gt;</code>: defines a large heading</li>
+  <li><code class="highlighter-rouge">&lt;p&gt;</code>: defines a paragraph</li>
+</ul>
+
+<hr />
+<h3 id="3-html-tags">3. HTML Tags</h3>
+<ul>
+  <li>Element names surrounded by angle brackets</li>
+  <li><code class="highlighter-rouge">&lt;tag&gt;content&lt;/tag&gt;</code></li>
+</ul>
+
+<hr />
+<h3 id="4-html-page-structure">4. HTML Page Structure</h3>
+<p><img src="/images/html/html-structure.png" alt="" /></p>
+
+<hr />
+<h3 id="5-html-documents">5. HTML Documents</h3>
+<ul>
+  <li><code class="highlighter-rouge"><span class="cp">&lt;!DOCTYPE html&gt;</span></code>: 모든 HTML5 문서의 시작(declaration)</li>
+  <li><code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> and <code class="highlighter-rouge">&lt;/html&gt;</code>: HTML 문서의 시작과 끝</li>
+  <li><code class="highlighter-rouge">&lt;body&gt;</code> and <code class="highlighter-rouge">&lt;/body&gt;</code>: 보이는 부분은 모두 바디 태그 안에 넣기</li>
+</ul>
+
+<hr />
+<h3 id="6-html-links">6. HTML Links</h3>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.w3schools.com"</span><span class="nt">&gt;</span>This is a link<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+<ul>
+  <li><code class="highlighter-rouge">&lt;a&gt;</code>: HTML links 정의 태그</li>
+  <li><code class="highlighter-rouge">href</code>: link의 목적지 주소 설정 속성</li>
+</ul>
+
+<hr />
+<h3 id="7-html-images">7. HTML Images</h3>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"w3schools.jpg"</span> <span class="na">alt=</span><span class="s">"W3Schools.com"</span> <span class="na">width=</span><span class="s">"104"</span> <span class="na">height=</span><span class="s">"142"</span> <span class="nt">/&gt;</span>
+</code></pre></div></div>
+<ul>
+  <li><code class="highlighter-rouge">&lt;img&gt;</code>: HTML images 정의 태그</li>
+  <li><code class="highlighter-rouge">src(source file)</code>, <code class="highlighter-rouge">alt(alternative text)</code>, <code class="highlighter-rouge">width</code>, <code class="highlighter-rouge">height</code>: 속성</li>
+</ul>
+
+<hr />
+<h3 id="8-html-buttons">8. HTML Buttons</h3>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button&gt;</span>Click me<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+<ul>
+  <li><code class="highlighter-rouge">&lt;button&gt;</code>: HTML buttons 정의 태그</li>
+</ul>
+
+<hr />
+<h3 id="9-html-lists">9. HTML Lists</h3>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Coffee<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Tea<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Milk<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+<ul>
+  <li><code class="highlighter-rouge">&lt;ul&gt;</code>: unorderd/bullet list 태그</li>
+  <li><code class="highlighter-rouge">&lt;ol&gt;</code>: ordered/numbered list 태그</li>
+  <li><code class="highlighter-rouge">&lt;li&gt;</code>: list items 태그</li>
+</ul>
+
+<hr />
+<h3 id="10-html-elements">10. HTML Elements</h3>
+<ul>
+  <li>HTML element는 시작 태그부터 마지막 태그까지의 모든 것</li>
+  <li><code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> element는 whole document</li>
+  <li><code class="highlighter-rouge">&lt;body&gt;</code> element는 document body</li>
+  <li><code class="highlighter-rouge">&lt;br&gt;</code> or <code class="highlighter-rouge">&lt;br /&gt;</code>: empty element</li>
+  <li>필수는 아니지만 태그를 소문자로 쓰길 권장</li>
+</ul>
+
+<hr />
+<h3 id="11-html-attributes">11. HTML Attributes</h3>
+<ul>
+  <li>모든 HTML elements는 attributes를 가질 수 있다.</li>
+  <li>Attributes는 element에 대한 추가적인 정보를 제공한다.</li>
+  <li>항상 시작 태그에 명시된다.</li>
+  <li>주로 name=”value”의 포맷 형식을 사용한다.</li>
+  <li>필수는 아니지만 속성을 소문자로 쓰길 권장</li>
+  <li>속성 value값에 ““가 필수 아니지만 쓰길 권장(생략, ‘’ 가능)</li>
+</ul>
+
+<hr />
+<h3 id="12-html-headings-paragraphs-horizontal-rules-line-break">12. HTML Headings, Paragraphs, Horizontal Rules, Line Break</h3>
+<ul>
+  <li><code class="highlighter-rouge">&lt;h1&gt;</code> to <code class="highlighter-rouge">&lt;h6&gt;</code>: most to least important headings</li>
+  <li><code class="highlighter-rouge">&lt;p&gt;</code>: paragraph(문단) 정의</li>
+  <li><code class="highlighter-rouge">&lt;hr&gt;</code>: a thematic break 정의(수평선 그어짐)</li>
+  <li><code class="highlighter-rouge">&lt;br&gt;</code>: a line break(줄 바꿈, 엔터 기능)</li>
+  <li><code class="highlighter-rouge">&lt;pre&gt;</code>: preformatted text, 태그 안에 작성한 대로 써짐</li>
+</ul>
+
+<hr />
+<h3 id="13-html-styles">13. HTML Styles</h3>
+<ul>
+  <li>The HTML Styles Attribute
+    <ul>
+      <li>syntax: <code class="highlighter-rouge">&lt;tagname style="property:value;"&gt;</code></li>
+      <li>property: CSS property, value: CSS value</li>
+    </ul>
+  </li>
+  <li>HTML Background Color, Text Color, Fonts, Text Size, Text-Alignment
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;body</span> <span class="na">style=</span><span class="s">"background-color:powderblue;"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">style=</span><span class="s">"color:blue;"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"font-family"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">style=</span><span class="s">"font-size:300%;"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">style=</span><span class="s">"text-align:center;"</span><span class="nt">&gt;</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<hr />
+<h3 id="14-html-text-formatting">14. HTML Text Formatting</h3>
+<ul>
+  <li>HTML Formatting Elements
+    <ul>
+      <li><code class="highlighter-rouge">&lt;b&gt;</code> - Bold text</li>
+      <li><code class="highlighter-rouge">&lt;strong&gt;</code> - Important text(bold + semantic importance)</li>
+      <li><code class="highlighter-rouge">&lt;i&gt;</code> - Italic text</li>
+      <li><code class="highlighter-rouge">&lt;em&gt;</code> - Emphasized text(i + semantic importance)</li>
+      <li><code class="highlighter-rouge">&lt;mark&gt;</code> - Marked/highlighted text(형광펜 처리)</li>
+      <li><code class="highlighter-rouge">&lt;small&gt;</code> - Small text</li>
+      <li><code class="highlighter-rouge">&lt;del&gt;</code> - Deleted text(— 처리)</li>
+      <li><code class="highlighter-rouge">&lt;ins&gt;</code> - Inserted text(underline 처리)</li>
+      <li><code class="highlighter-rouge">&lt;sub&gt;</code> - Subscript text(글씨 밑으로 내림)</li>
+      <li><code class="highlighter-rouge">&lt;sup&gt;</code> - Superscript text(글씨 위로 올림)</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h3 id="15-html-quotation-and-citation-elements">15. HTML Quotation and Citation Elements</h3>
+<ul>
+  <li><code class="highlighter-rouge">&lt;q&gt;</code> - Short Quotations(짧은 인용, 작은 따옴표)</li>
+  <li><code class="highlighter-rouge">&lt;blockquote&gt;</code> - Quotations(들여쓰기 + 문단 인용)</li>
+  <li><code class="highlighter-rouge">&lt;abbr&gt;</code> - abbreviation or acronym (축약어 줄임말 등에 사용)</li>
+  <li><code class="highlighter-rouge">&lt;address&gt;</code> - 문서나 기사의 연락처에 사용, 주로 Italic체 사용, 앞 뒤로 line break</li>
+  <li><code class="highlighter-rouge">&lt;cite&gt;</code> - work의 title, italic체 사용 (미술 작품의 제목 등에 사용)</li>
+  <li><code class="highlighter-rouge">&lt;bdo&gt;</code> - Bi-Directional Override, 글자 쓰는 방향 바꿀 때 사용</li>
+</ul>
+
+<hr />
+<h3 id="16-html-comments">16. HTML Comments</h3>
+<ul>
+  <li>syntax: <code class="highlighter-rouge">&lt;!-- Write your comment here --&gt;</code></li>
+</ul>
+
+<hr />
+<h3 id="17-html-styles---css">17. HTML Styles - CSS</h3>
+<ul>
+  <li>Styling HTML with CSS
+    <ul>
+      <li>CSS stands for Cascading Style Sheets.</li>
+      <li>CSS can be added to HTML elements in 3 ways
+        <ul>
+          <li>Inline - by using the style attribute in HTML elements</li>
+          <li>Internal - by using a <style> element in the &lt;head&gt; section</style></li>
+          <li>External - by using an external CSS file</li>
+        </ul>
+      </li>
+      <li>id속성은 #으로(bookmark시에도 사용), class속성은 .으로 구분</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h3 id="18-html-block-and-inline-elements">18. HTML Block and Inline Elements</h3>
+<ul>
+  <li>Block Elements
+    <ul>
+      <li>new line으로 시작 + full width available</li>
+      <li>대표적으로 div element(다른 엘리먼트 container, class, id, style과 주로 같이 사용)</li>
+      <li><code class="highlighter-rouge">&lt;address&gt;</code> <code class="highlighter-rouge">&lt;article&gt;</code> <code class="highlighter-rouge">&lt;aside&gt;</code> <code class="highlighter-rouge">&lt;blockquote&gt;</code> <code class="highlighter-rouge">&lt;canvas&gt;</code> <code class="highlighter-rouge">&lt;dd&gt;</code> <code class="highlighter-rouge">&lt;div&gt;</code></li>
+      <li><code class="highlighter-rouge">&lt;dl&gt;</code> <code class="highlighter-rouge">&lt;dt&gt;</code> <code class="highlighter-rouge">&lt;fieldset&gt;</code> <code class="highlighter-rouge">&lt;figcaption&gt;</code> <code class="highlighter-rouge">&lt;figure&gt;</code> <code class="highlighter-rouge">&lt;footer&gt;</code> <code class="highlighter-rouge">&lt;form&gt;</code></li>
+      <li><code class="highlighter-rouge">&lt;h1-h6&gt;</code> <code class="highlighter-rouge">&lt;header&gt;</code> <code class="highlighter-rouge">&lt;hr&gt;</code> <code class="highlighter-rouge">&lt;li&gt;</code> <code class="highlighter-rouge">&lt;main&gt;</code> <code class="highlighter-rouge">&lt;nav&gt;</code> <code class="highlighter-rouge">&lt;noscript&gt;</code> <code class="highlighter-rouge">&lt;ol&gt;</code></li>
+      <li><code class="highlighter-rouge">&lt;output&gt;</code> <code class="highlighter-rouge">&lt;p&gt;</code> <code class="highlighter-rouge">&lt;pre&gt;</code> <code class="highlighter-rouge">&lt;section&gt;</code> <code class="highlighter-rouge">&lt;table&gt;</code> <code class="highlighter-rouge">&lt;tfoot&gt;</code> <code class="highlighter-rouge">&lt;ul&gt;</code> <code class="highlighter-rouge">&lt;video&gt;</code></li>
+    </ul>
+  </li>
+  <li>Inline Elements
+    <ul>
+      <li>new line으로 시작 X  + 필요한 만큼의 width</li>
+      <li>대표적으로 span element(text container, class, id, style과 주로 같이 사용)</li>
+      <li><code class="highlighter-rouge">&lt;a&gt;</code> <code class="highlighter-rouge">&lt;abbr&gt;</code> <code class="highlighter-rouge">&lt;acronym&gt;</code> <code class="highlighter-rouge">&lt;b&gt;</code> <code class="highlighter-rouge">&lt;bdo&gt;</code> <code class="highlighter-rouge">&lt;big&gt;</code> <code class="highlighter-rouge">&lt;br&gt;</code> <code class="highlighter-rouge">&lt;button&gt;</code> <code class="highlighter-rouge">&lt;cite&gt;</code></li>
+      <li><code class="highlighter-rouge">&lt;code&gt;</code> <code class="highlighter-rouge">&lt;dfn&gt;</code> <code class="highlighter-rouge">&lt;em&gt;</code> <code class="highlighter-rouge">&lt;i&gt;</code> <code class="highlighter-rouge">&lt;img&gt;</code> <code class="highlighter-rouge">&lt;input&gt;</code> <code class="highlighter-rouge">&lt;kbd&gt;</code> <code class="highlighter-rouge">&lt;label&gt;</code> <code class="highlighter-rouge">&lt;map&gt;</code></li>
+      <li><code class="highlighter-rouge">&lt;object&gt;</code> <code class="highlighter-rouge">&lt;q&gt;</code> <code class="highlighter-rouge">&lt;samp&gt;</code> <code class="highlighter-rouge">&lt;script&gt;</code> <code class="highlighter-rouge">&lt;select&gt;</code> <code class="highlighter-rouge">&lt;small&gt;</code> <code class="highlighter-rouge">&lt;span&gt;</code> <code class="highlighter-rouge">&lt;strong&gt;</code></li>
+      <li><code class="highlighter-rouge">&lt;sub&gt;</code> <code class="highlighter-rouge">&lt;sup&gt;</code> <code class="highlighter-rouge">&lt;textarea&gt;</code> <code class="highlighter-rouge">&lt;time&gt;</code> <code class="highlighter-rouge">&lt;tt&gt;</code> <code class="highlighter-rouge">&lt;var&gt;</code></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h3 id="19-html-classes">19. HTML Classes</h3>
+<ul>
+  <li>One or more class names for an HTML element</li>
+  <li>Using the class Attribute in CSS
+    <ul>
+      <li><code class="highlighter-rouge">&lt;h2 class="city"&gt;</code></li>
+      <li>style: <code class="highlighter-rouge">.city{ color: white; }</code></li>
+    </ul>
+  </li>
+  <li>Using the class Attribute in JavaScript
+    <ul>
+      <li><code class="highlighter-rouge">&lt;h2 class="city"&gt;</code></li>
+      <li>script: <code class="highlighter-rouge">function{ var x = document.getElementByClassName("city"); }</code></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h3 id="20-html-id">20. HTML Id</h3>
+<ul>
+  <li>A unique id for an HTML element(HTML에서 id의 value 유일해야 함, 띄어쓰기 불가능)</li>
+  <li>Using the id Attribute in CSS
+    <ul>
+      <li><code class="highlighter-rouge">&lt;h1 id="myCity"&gt;</code></li>
+      <li>style: <code class="highlighter-rouge">#myHeader{ color: black; }</code></li>
+    </ul>
+  </li>
+  <li>Using the id Attribute in JavaScript
+    <ul>
+      <li><code class="highlighter-rouge">&lt;h1 id="myCity"&gt;</code></li>
+      <li>script: <code class="highlighter-rouge">function{ document.getElementById("myCity").innerHTML = "Hi"; }</code></li>
+    </ul>
+  </li>
+  <li>Bookmark with ID and Links
+    <ul>
+      <li>Create a bookmark: <code class="highlighter-rouge">&lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt;</code></li>
+      <li>Add a link to the bookmark: <code class="highlighter-rouge">&lt;a href="#C4"&gt;Jump to Chapter 4&lt;/a&gt;</code></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h3 id="21-html-iframes">21. HTML Iframes</h3>
+<ul>
+  <li>An iframe: 웹 페이지 속에 웹페이지</li>
+  <li>syntax: <code class="highlighter-rouge">&lt;iframe src="URL"&gt;&lt;/iframe&gt;</code></li>
+</ul>
+
+<hr />
+<h3 id="22-html-javascript">22. HTML JavaScript</h3>
+<ul>
+  <li>JavaScript makes HTML pages more dynamic and interactive.</li>
+  <li>The HTML <code class="highlighter-rouge">&lt;script&gt;</code> Tag
+    <ul>
+      <li>client-side script (JavaScript)</li>
+      <li>contains scripting statements, or points to an external script file(src)</li>
+      <li>image manipulation, form validation, dynamic changes of content 등에 사용</li>
+      <li>HTML element 선택 위해 <code class="highlighter-rouge">document.getElementById()</code> 자주 사용</li>
+    </ul>
+  </li>
+  <li>A Taste of JavaScript(자바스크립트 예시)
+    <ul>
+      <li>JavaScript can change HTML content
+        <ul>
+          <li><code class="highlighter-rouge">document.getElementById("demo").innerHTML = "Hello JavaScript!";</code></li>
+        </ul>
+      </li>
+      <li>JavaScript can change HTML styles
+        <ul>
+          <li><code class="highlighter-rouge">document.getElementById("demo").style.fontSize = "25px";</code></li>
+          <li><code class="highlighter-rouge">document.getElementById("demo").style.color = "red";</code></li>
+          <li><code class="highlighter-rouge">document.getElementById("demo").style.backgroundColor = "yellow";</code></li>
+        </ul>
+      </li>
+      <li>JavaScript can change HTML attributes
+        <ul>
+          <li><code class="highlighter-rouge">document.getElementById("image").src = "picture.gif";</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>The HTML <code class="highlighter-rouge">&lt;noscript&gt;</code> Tag
+    <ul>
+      <li>브라우저에서 script 못 읽을 시에 대체 내용 제공</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h3 id="23-html-file-paths">23. HTML File Paths</h3>
+<ul>
+  <li>File Paths는 밑과 같은 외부파일 연결시에 사용
+    <ul>
+      <li>Web Pages</li>
+      <li>Images</li>
+      <li>Style sheets</li>
+      <li>JavaScript</li>
+    </ul>
+  </li>
+  <li>Absolute File Paths</li>
+  <li>Relative File Paths</li>
+</ul>
+
+<hr />
+<h3 id="24-html-head">24. HTML Head</h3>
+<ul>
+  <li>The HTML <code class="highlighter-rouge">&lt;head&gt;</code> Element
+    <ul>
+      <li>html과 body 태그 사이에 위치, metadata(data about data)의 container</li>
+      <li>metadata: data about the HTML document</li>
+      <li>주로 document title, character set, styles, links, scripts 등을 정의</li>
+      <li>주요 태그: <code class="highlighter-rouge">&lt;title&gt;</code> <code class="highlighter-rouge">&lt;style&gt;</code> <code class="highlighter-rouge">&lt;meta&gt;</code> <code class="highlighter-rouge">&lt;link&gt;</code> <code class="highlighter-rouge">&lt;script&gt;</code> <code class="highlighter-rouge">&lt;base&gt;</code></li>
+    </ul>
+  </li>
+  <li>The HTML <code class="highlighter-rouge">&lt;title&gt;</code> Element
+    <ul>
+      <li>title of the document 정의, 모든 html 문서에 필요</li>
+      <li>브라우저 탭, 즐겨찾기, 검색엔진 결과 위해 필요</li>
+    </ul>
+  </li>
+  <li>The HTML <code class="highlighter-rouge">&lt;style&gt;</code> Element
+    <ul>
+      <li>define style information for a single HTML page</li>
+    </ul>
+  </li>
+  <li>The HTML <code class="highlighter-rouge">&lt;link&gt;</code> Element
+    <ul>
+      <li>used to link to external style sheets</li>
+    </ul>
+  </li>
+  <li>The HTML <code class="highlighter-rouge">&lt;meta&gt;</code> Element
+    <ul>
+      <li>character set, page description, keywords, author 등을 명시</li>
+      <li>character set: <code class="highlighter-rouge">&lt;meta charset="UTF-8"&gt;</code></li>
+      <li>description of web page: <code class="highlighter-rouge">&lt;meta name="description" content="Web tutorials"&gt;</code></li>
+      <li>keywords for search engines: <code class="highlighter-rouge">&lt;meta name="keywords" content="HTML, CSS"&gt;</code></li>
+      <li>author of a page: <code class="highlighter-rouge">&lt;meta name="author" content="John Doe"&gt;</code></li>
+      <li>refresh document every 30s: <code class="highlighter-rouge">&lt;meta http-equiv="refresh" content="30"&gt;</code></li>
+    </ul>
+  </li>
+  <li>Setting The Viewport
+    <ul>
+      <li>HTML5는 웹 디자이너가 <code class="highlighter-rouge">&lt;meta&gt;</code> 태그로 viewport 관리하게 해줌</li>
+      <li>viewport: user에게 웹 페이지가 보이는 부분, device(핸드폰 등)에 따라 달라짐</li>
+      <li><code class="highlighter-rouge">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></li>
+      <li>모든 웹 페이지에 이 <code class="highlighter-rouge">&lt;meta&gt;</code> viewport element 넣어야 함</li>
+    </ul>
+  </li>
+  <li>The HTML <code class="highlighter-rouge">&lt;script&gt;</code> Element
+    <ul>
+      <li>define client-side JavaScripts</li>
+    </ul>
+  </li>
+  <li>The HTML <code class="highlighter-rouge">&lt;base&gt;</code> Element
+    <ul>
+      <li>base URL과 base target 지정(해당 웹페이지의 모든 relative URL에 대해)</li>
+      <li><code class="highlighter-rouge">&lt;base href="https://www.w3schools.com/images/" target="_blank"&gt;</code></li>
+    </ul>
+  </li>
+  <li>Omitting <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code>, <code class="highlighter-rouge">&lt;head&gt;</code> and <code class="highlighter-rouge">&lt;body&gt;</code>?
+    <ul>
+      <li>HTML5 standard에서는 <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> <code class="highlighter-rouge">&lt;body&gt;</code> <code class="highlighter-rouge">&lt;head&gt;</code> tag 모두 생략 가능</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h3 id="25-html-layouts">25. HTML Layouts</h3>
+<ul>
+  <li>HTML Layouts Elements
+    <ul>
+      <li>웹사이트는 보통 컨텐츠를 다양한 컬럼안에서 보여줌(잡지나 신문 등)</li>
+      <li>HTML5는 new semantic element를 제공(웹페이지의 다른 파트 정의)
+<img src="/images/html/html-layout.gif" alt="" /></li>
+      <li><code class="highlighter-rouge">&lt;header&gt;</code> - Defines a header for a document or a section</li>
+      <li><code class="highlighter-rouge">&lt;nav&gt;</code> - Defines a container for navigation links</li>
+      <li><code class="highlighter-rouge">&lt;section&gt;</code> - Defines a section in a document</li>
+      <li><code class="highlighter-rouge">&lt;article&gt;</code> - Defines an independent self-contained article</li>
+      <li><code class="highlighter-rouge">&lt;aside&gt;</code> - Defines content aside from the content (like a sidebar)</li>
+      <li><code class="highlighter-rouge">&lt;footer&gt;</code> - Defines a footer for a document or a section</li>
+      <li><code class="highlighter-rouge">&lt;details&gt;</code> - Defines additional details</li>
+      <li><code class="highlighter-rouge">&lt;summary&gt;</code> - Defines a heading for the <code class="highlighter-rouge">&lt;details&gt;</code> element</li>
+    </ul>
+  </li>
+  <li>HTML Layout Techniques(multicolumm layout 만드는 4가지 방법)
+    <ul>
+      <li>HTML tables
+        <ul>
+          <li><code class="highlighter-rouge">&lt;table&gt;</code> 태그는 layout tool을 위한게 아님. page layout으로 사용 비추천</li>
+        </ul>
+      </li>
+      <li>CSS framework
+        <ul>
+          <li>layout 빠르게 만들기 위한 framework 사용 <a href="https://www.w3schools.com/w3css/default.asp">W3.CSS</a> or <a href="https://www.w3schools.com/bootstrap/default.asp">Bootstrap</a></li>
+        </ul>
+      </li>
+      <li>CSS float property
+        <ul>
+          <li>css float property 사용하여 웹 전체 레이아웃 만듦</li>
+          <li>가장 흔한 사용법, 배우기 쉽지만 flexible하지 못함</li>
+        </ul>
+      </li>
+      <li>CSS flexbox
+        <ul>
+          <li>새로운 layout mode in CSS3</li>
+          <li>다른 디바이스, 사이즈에 적용 가능, IE10과 이전 버전 작동 X</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h3 id="26-html-responsive-web-design">26. HTML Responsive Web Design</h3>
+<ul>
+  <li>What is Responsive Web Design?
+    <ul>
+      <li>Using HTML and CSS to resize, hide, shrink, enlarge, or move the content</li>
+    </ul>
+  </li>
+  <li>Setting The Viewport
+    <ul>
+      <li>반응형 웹페이지를 위해서는 모든 웹 페이지에 아래의 코드 입력 해야함</li>
+      <li><code class="highlighter-rouge">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></li>
+    </ul>
+  </li>
+  <li>Responsive Images
+    <ul>
+      <li>If the CSS width property is set to 100%, 반응형 이미지로 화면 내 가능한 사이즈만큼 커짐</li>
+      <li>If the max-width property is set to 100%, 원래 사이즈까지만 커짐</li>
+      <li>picture-&gt;source-&gt;media 조정시에 width에 따라 사진 바꾸기 가능</li>
+    </ul>
+  </li>
+  <li>Responsive Text Size
+    <ul>
+      <li>viewport width로 text size 조정 가능</li>
+      <li>Viewport: browser window size, 1vw = 1% of viewport width.</li>
+      <li><code class="highlighter-rouge">&lt;h1 style="font-size:10vw"&gt;Hello World&lt;/h1&gt;</code></li>
+    </ul>
+  </li>
+  <li>Media Queries
+    <ul>
+      <li>browser size마다 다른 style로 정의 가능</li>
+    </ul>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;style&gt;</span>
+<span class="nc">.left</span><span class="o">,</span> <span class="nc">.right</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">20%</span><span class="p">;</span> <span class="c">/* The width is 20%, by default */</span>
+<span class="p">}</span>
+
+<span class="nc">.main</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">60%</span><span class="p">;</span> <span class="c">/* The width is 60%, by default */</span>
+<span class="p">}</span>
+
+<span class="c">/* Use a media query to add a breakpoint at 800px: */</span>
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">800px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.left</span><span class="o">,</span> <span class="nc">.main</span><span class="o">,</span> <span class="nc">.right</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span> <span class="c">/* Width is 100%, when the viewport is 800px or smaller */</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Responsive Web Design - Frameworks
+    <ul>
+      <li>free &amp; easy to use</li>
+      <li>Using W3.CSS</li>
+      <li>Bootstrap</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h3 id="27-html-computer-code-elements-monospace-font">27. HTML Computer Code Elements (monospace font)</h3>
+<ul>
+  <li>HTML <code class="highlighter-rouge">&lt;kbd&gt;</code> For Keyboard Input
+    <ul>
+      <li><code class="highlighter-rouge">&lt;kbd&gt;</code>: user input 나타냄, keyboard input or voice commands</li>
+    </ul>
+  </li>
+  <li>HTML <code class="highlighter-rouge">&lt;samp&gt;</code> For Program Output
+    <ul>
+      <li><code class="highlighter-rouge">&lt;samp&gt;</code>: program 이나 computing system output 나타냄</li>
+    </ul>
+  </li>
+  <li>HTML <code class="highlighter-rouge">&lt;code&gt;</code> For Computer Code
+    <ul>
+      <li><code class="highlighter-rouge">&lt;code&gt;</code>: fragment of computer code 나타냄, 줄내림 안됨</li>
+      <li><code class="highlighter-rouge">&lt;pre&gt;&lt;code&gt;</code>: 로 쓰면 줄내림 가능</li>
+    </ul>
+  </li>
+  <li>HTML <code class="highlighter-rouge">&lt;var&gt;</code> For Variables
+    <ul>
+      <li><code class="highlighter-rouge">&lt;var&gt;</code>: variable 나타냄, 수학 표현, 변수 등</li>
+      <li><code class="highlighter-rouge">Einstein wrote: &lt;var&gt;E&lt;/var&gt; = &lt;var&gt;mc&lt;/var&gt;&lt;sup&gt;2&lt;/sup&gt;.</code></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h3 id="28-html-entities">28. HTML Entities</h3>
+<ul>
+  <li>Reserved characters in HTML character entities로 사용되야 함.</li>
+  <li>keyboard에 없는 character도 entities로 대체 가능.</li>
+  <li>Useful HTML Character Entities
+  <img src="/images/html/html-character-entities.png" alt="" /></li>
+</ul>
+
+<hr />
+<h3 id="29-html-uniform-resource-locators">29. HTML Uniform Resource Locators</h3>
+<ul>
+  <li>URL - Uniform Resource Locator - web address</li>
+  <li>composed of words(w3schools.com) 또는 IP address(192.68.20.50)로 표기</li>
+  <li>ex) <code class="highlighter-rouge">scheme://prefix.domain:port/path/filename</code></li>
+  <li>scheme - defines the type of Internet service (most common is http or https)</li>
+  <li>prefix - defines a domain prefix (default for http is www)</li>
+  <li>domain - defines the Internet domain name (like w3schools.com)</li>
+  <li>port - defines the port number at the host (default for http is 80)</li>
+  <li>path - defines a path at the server (If omitted: the root directory of the site)</li>
+  <li>filename - defines the name of a document or resource</li>
+</ul>
+
+<hr />
+<h3 id="30-html-and-xhtml">30. HTML and XHTML</h3>
+<ul>
+  <li>What is XHTML?
+    <ul>
+      <li>HTML written as XML</li>
+      <li>stands for EXtensible HyperText Markup Language</li>
+      <li>almost identical to HTML</li>
+      <li>stricter than HTML</li>
+      <li>HTML defined as an XML application</li>
+      <li>supported by all major browsers</li>
+    </ul>
+  </li>
+  <li>Why XHTML?
+    <ul>
+      <li>HTML이 문법 맞지 않게 쓰여질 때 많은데 그래도 돌아감</li>
+      <li>XML is a markup language where documents must be marked up correctly.</li>
+      <li>If you want to study XML, please read our <a href="https://www.w3schools.com/xml/default.asp">XML tutorial</a>.</li>
+      <li>By combining the strengths of HTML and XML, XHTML was developed.</li>
+      <li>XHTML is HTML redesigned as XML.</li>
+    </ul>
+  </li>
+  <li>The Most Important Differences from HTML
+    <ul>
+      <li>Document Structure
+        <ul>
+          <li>XHTML DOCTYPE is mandatory</li>
+          <li>The xmlns attribute in <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> is mandatory</li>
+          <li><code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> <code class="highlighter-rouge">&lt;head&gt;</code> <code class="highlighter-rouge">&lt;title&gt;</code> <code class="highlighter-rouge">&lt;body&gt;</code> are mandatory</li>
+        </ul>
+      </li>
+      <li>XHTML Elements
+        <ul>
+          <li>XHTML elements must be properly nested</li>
+          <li>XHTML elements must always be closed</li>
+          <li>XHTML elements must be in lowercase</li>
+          <li>XHTML documents must have one root element</li>
+        </ul>
+      </li>
+      <li>XHTML Attributes
+        <ul>
+          <li>Attribute names must be in lower case</li>
+          <li>Attribute values must be quoted</li>
+          <li>Attribute minimization is forbidden</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h3 id="참조">참조</h3>
+<ul>
+  <li><a href="https://www.w3schools.com/html/default.asp">w3schools.com</a></li>
+</ul>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    
+      <div class="entry-image-index">
+        <a href="http://localhost:4000/cisco-networking-7/" title="[요약] 후니의 쉽게 쓴 시스코 네트워킹 - 7"><img src="http://localhost:4000/images/network.jpg" alt="[요약] 후니의 쉽게 쓴 시스코 네트워킹 - 7"></a>
+      </div><!-- /.entry-image -->
+    
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2018-04-21T00:00:00-07:00"><a href="http://localhost:4000/cisco-networking-7/">April 21, 2018</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Yeonggyu Lim">Yeonggyu Lim</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~1 minute
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://localhost:4000/cisco-networking-7/" rel="bookmark" title="[요약] 후니의 쉽게 쓴 시스코 네트워킹 - 7" itemprop="url">[요약] 후니의 쉽게 쓴 시스코 네트워킹 - 7</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <hr />
+
+<h2 id="-part-12-ipv6로-떠나는-여행-"><span style="color:blue"> <em>Part 12 IPv6로 떠나는 여행</em> </span></h2>
+<h3 id="1-ipv4의-문제점">1. IPv4의 문제점</h3>
+<ul>
+  <li>IPv4 주소의 공간 부족 =&gt; aggregation(라우팅 정보 하나로 묶어 테이블 줄임)이 어려움</li>
+  <li>IPv4의 복잡한 Header: 전체 필드 불필요하게 늘어남</li>
+  <li>IPv4의 IP 주소 배정 방식이 복잡 =&gt; DHCP로 해결, but 또 다른 서버의 구성(오버헤드)</li>
+  <li>번거롭고 효율적이지 못했던 보안기능과 Mobile IP의 지원</li>
+</ul>
+
+<h3 id="2-ipv4의-문제-해결법">2. IPv4의 문제 해결법</h3>
+<ul>
+  <li>NAT(Network Address Translation)
+    <ul>
+      <li>내부망에서는 Private IP주소, 내 맘대로 주소 쓰고, 인터넷으로 나갈 때만 공인 IP 주소 사용헫</li>
+      <li>요즘 많이 사용하는 인터넷 공유기 역시 이런 원리 이용</li>
+      <li>IP 주소 변환해주는 시간 필요</li>
+      <li>End-to-End 기능 지원 프로그램 =&gt; 호환성에 문제 ex) NAT으로 인터넷 전화 잘 안되는 것</li>
+    </ul>
+  </li>
+  <li>서브넷팅: 네트워크 잘게 쪼개 씀</li>
+  <li>DHCP(Dynamic Host Configuration Protocol)가 안쓰는 주소 회수함: 주소 낭비 막음</li>
+  <li>CIDR(Classless Inter Domain Routing): 기존 클래스 약속 무시, 서브넷 마스크로 클래스 지정
+    <ul>
+      <li>수퍼넷팅: 여러 개의 작은 네트워크를 한 개로 모아 라우팅 테이블 줄임 =&gt; 라우터 메모리 절약, 속도 업</li>
+    </ul>
+  </li>
+  <li>새로운 IP방식: IP version 6</li>
+</ul>
+
+<h3 id="3-ipv6-특징">3. IPv6 특징</h3>
+<ul>
+  <li>넓어진 주소 공간 =&gt; Global Address: 전 세계적으로 유일한 주소
+    <ul>
+      <li>flexibility: 융통성 + 주소를 체계적 배정</li>
+      <li>Prefix Aggregation 효과적 (주소 집합해서 하나의 주소 만드는 것)</li>
+      <li>multihoming: 한 곳에 문제 생겼을 때 돌아갈 곳 정해두는 방식</li>
+      <li>End-to-End Reachability: 한쪽 끝에서 다른 쪽 끝까지 주소 변환 없이 접속</li>
+    </ul>
+  </li>
+  <li>IP header 구조 대폭 개선
+    <ul>
+      <li>헤더 간소화, 효과적 배치 =&gt; 라우팅 성능 획기적으로 올림</li>
+    </ul>
+  </li>
+  <li>다양한 IPv4와의 호환옵션</li>
+  <li>주소의 계층화(Hierarchical Addressing)</li>
+  <li>Auto Configuration
+    <ul>
+      <li>Stateless Auto Configuration: 특정 서버 없이 라우터에서 자동으로 호스트 IP구성 가능</li>
+      <li>호스트(PC)의 IP 주소 걱정해 줄 필요 X</li>
+      <li>Plug and Play: 네트워크에 붙이면 자동으로 주소 만들어줌</li>
+    </ul>
+  </li>
+  <li>Broadcast 대신 Multicast 사용
+    <ul>
+      <li>4bit의 Scope ID 사용</li>
+    </ul>
+  </li>
+  <li>Mobility</li>
+</ul>
+
+<hr />
+<h2 id="참조">참조</h2>
+<ul>
+  <li><a href="http://www.kyobobook.co.kr/search/SearchCommonMain.jsp">후니의 쉽게 쓴 시스코 네트워킹</a></li>
+</ul>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    
+      <div class="entry-image-index">
+        <a href="http://localhost:4000/github-pages/" title="GitHub Pages로 Website 만들기"><img src="http://localhost:4000/images/github-pages-jekyll.jpg" alt="GitHub Pages로 Website 만들기"></a>
+      </div><!-- /.entry-image -->
+    
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2018-04-21T00:00:00-07:00"><a href="http://localhost:4000/github-pages/">April 21, 2018</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Yeonggyu Lim">Yeonggyu Lim</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~1 minute
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://localhost:4000/github-pages/" rel="bookmark" title="GitHub Pages로 Website 만들기" itemprop="url">GitHub Pages로 Website 만들기</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <hr />
+<h3 id="github-pages란">GitHub Pages란?</h3>
+<ul>
+  <li>GitHub에서 무료로 호스팅하는 공개 웹페이지</li>
+</ul>
+
+<h3 id="jekyll이란">Jekyll이란?</h3>
+<ul>
+  <li>GitHub에서 제공하는 ruby기반 static 웹 페이지 서비스</li>
+  <li>사용시에 유저는 markdown이나 text기반의 내용을 업로드하여 블로그 운영 가능</li>
+</ul>
+
+<h3 id="markdown이란">Markdown이란?</h3>
+<ul>
+  <li>일종의 마크업 언어로 텍스트에 태그 이용하여 글자를 꾸미거나 이미지 삽입 가능</li>
+</ul>
+
+<hr />
+<h3 id="2가지-방법">2가지 방법</h3>
+<ol>
+  <li><strong>User or Organizational site</strong>
+    <ul>
+      <li>Repository name : {username}.github.io</li>
+      <li>주소 : {username}.github.io</li>
+      <li>한 계정에 한 site 생성 가능</li>
+      <li>Jekyll 사용 제약 적음</li>
+    </ul>
+  </li>
+  <li><strong>Project site</strong>
+    <ul>
+      <li>Repository name : project name</li>
+      <li>주소 : {username}.github.io/{repositoryname}</li>
+      <li>여러 site 생성 가능</li>
+      <li>Jekyll 사용 제약 있음</li>
+      <li>gh-pages 혹은 master branch로 사용해야 함</li>
+    </ul>
+  </li>
+</ol>
+
+<p>여기서는 제약이 적은 website를 만들기 위해 (1)번 User or organizational site 사용</p>
+
+<hr />
+<h2 id="1-프로젝트-시작저장소-만들기">1. 프로젝트 시작/저장소 만들기</h2>
+<p><img src="/images/github-pages/github-pages-1.jpg" alt="" />
+<img src="/images/github-pages/github-pages-2.jpg" alt="" />
+<img src="/images/github-pages/github-pages-3.jpg" alt="" />
+Start a Project -&gt; 저장소 이름 입력 -&gt; Create repository 클릭 시 저장소가 만들어지면서 {username}.github.io로 publish 되고 간단하게 웹사이트가 만들어진다.</p>
+
+<h2 id="2-1-github-pages-theme-이용하기-jekyll-기본-pages-theme-더-다양한-테마를-보고-사용하고-싶다면-skip">2-1. GitHub Pages Theme 이용하기 (Jekyll 기본 Pages Theme) (더 다양한 테마를 보고 사용하고 싶다면 Skip)</h2>
+<p>The repository -&gt; Settings -&gt; Github Pages -&gt; Coose a Theme -&gt; Select Theme 클릭
+<img src="/images/github-pages/github-pages-4.jpg" alt="" />
+<img src="/images/github-pages/github-pages-5.jpg" alt="" />
+<img src="/images/github-pages/github-pages-6.jpg" alt="" />
+<img src="/images/github-pages/github-pages-7.jpg" alt="" />
+그러면 웹사이트가 해당 테마로 바뀌게 된다.
+<img src="/images/github-pages/github-pages-8.jpg" alt="" /></p>
+
+<h2 id="2-2-jekyll-theme-이용하기-jekyll에서-마음에-드는-theme-골라-적용하기">2-2. Jekyll Theme 이용하기 (Jekyll에서 마음에 드는 Theme 골라 적용하기)</h2>
+<figure>
+<img src="/images/github-pages/github-pages-9.jpg" alt="" />
+<figcaption>
+<a href="http://jekyllthemes.org/" title="Jekyll Theme">지킬 테마</a>
+</figcaption>
+</figure>
+<p>위의 웹사이트에서 원하는 형식의 테마를 선택하여 데모 버전을 볼 수도 있고, 다운로드 받을 수도 있다. 형식은 블로그, 온라인 레쥬메, 프로파일 등이 있다.</p>
+
+<figure>
+<img src="/images/github-pages/github-pages-10.jpg" alt="" />
+<figcaption>
+<a href="http://jekyllthemes.org/themes/landing-page/" title="Jekyll Landing Page Theme">지킬 Landing Page 테마</a>
+</figcaption>
+</figure>
+<p>블로그가 아닌 내 basic 정보를 적기 위한 웹사이트를 만들기 Landing Page라는 테마를 골랐다. 위의 caption에서 다운로드 혹은 데모버전을 볼 수 있다.</p>
+
+<h2 id="3-원격저장소서버의-repository를-지역저장소로-가져오기-git-clone-이용">3. 원격저장소(서버)의 Repository를 지역저장소로 가져오기 (git clone 이용)</h2>
+<p><img src="/images/github-pages/github-pages-11.jpg" alt="" />
+HTTPS를 Copy해서 Terminal 실행 후 git clone을 이용해 다운로드 한다. (git 설치되었다고 가정)
+<img src="/images/github-pages/github-pages-12.jpg" alt="" /></p>
+
+<h2 id="4-지역저장소에-다운로드-받은-jekyll-테마를-저장하기">4. 지역저장소에 다운로드 받은 Jekyll 테마를 저장하기</h2>
+<p>git clone으로 다운 받은 지역 저장소 디렉토리에 파일들(2-1에서 받은 파일들)을 삭제하고, 2-2로 받은 테마 폴더 안의 파일들을 복사하여 붙여넣는다.
+<img src="/images/github-pages/github-pages-13.jpg" alt="" />
+<img src="/images/github-pages/github-pages-14.jpg" alt="" /></p>
+
+<h2 id="5-지역저장소의-파일들을-원격저장소서버로-동기화-시키기-git-status-add-commit-push-사용">5. 지역저장소의 파일들을 원격저장소(서버)로 동기화 시키기 (git status, add, commit, push 사용)</h2>
+<p>git status를 통해 지역저장소의 파일 변화를 볼 수 있고, git add와 commit 그리고 push를 통해 원격 저장소에 동기화 시킨다.
+<img src="/images/github-pages/github-pages-15.jpg" alt="" />
+<img src="/images/github-pages/github-pages-16.jpg" alt="" />
+<img src="/images/github-pages/github-pages-17.jpg" alt="" />
+그럼 이렇게 변한 테마의 웹사이트를 확인할 수 있다.
+<img src="/images/github-pages/github-pages-18.jpg" alt="" /></p>
+
+<h2 id="6-반복-지역저장소에-있는-코드들을-수정하여-원격저장소서버로-git-add-commit-push하여-지속-수정하면-된다">6. (반복) 지역저장소에 있는 코드들을 수정하여 원격저장소(서버)로 git add, commit, push하여 지속 수정하면 된다.</h2>
+<ul>
+  <li><a href="https://yeonggyulim.github.io/profile">yeonggyulim.github.io/profile</a></li>
+  <li>사정상 User site를 블로그로 이용하기 위해 위의 예제를 후에 project site로 변경하였습니다.</li>
+</ul>
+
+<hr />
+<h3 id="참조">참조</h3>
+<ul>
+  <li><a href="https://pages.github.com/">github pages</a></li>
+  <li><a href="http://gjchoi.github.io/env/Github-page%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/">github page로 블로그 만들기</a></li>
+</ul>
+
+<h3 id="참고-사항">참고 사항</h3>
+<ul>
+  <li><a href="https://help.github.com/articles/should-i-rename-lt-username-github-com-gt-repositories-to-lt-username-github-io-gt/">GitHub Help</a></li>
+  <li>검색하다 보니, 예전에는 {username.github.com}이름의 repositories가 GitHub Pages로 되었는데, 이제는 User and Organizational Page repository 이름으로 {username.github.io}를 쓰고 있다고 한다.</li>
+  <li>.com 으로 만든 Pages를 .io로 바꿀 필요는 없지만, 새로운 repositories들은 .io를 사용하길 강력 추천하고, .io와 .com 파일이 둘 다 있다면 .io 버전이 사용될거라고 한다.</li>
+</ul>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    
+      <div class="entry-image-index">
+        <a href="http://localhost:4000/cisco-networking-6/" title="[요약] 후니의 쉽게 쓴 시스코 네트워킹 - 6"><img src="http://localhost:4000/images/network.jpg" alt="[요약] 후니의 쉽게 쓴 시스코 네트워킹 - 6"></a>
+      </div><!-- /.entry-image -->
+    
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2018-04-18T00:00:00-07:00"><a href="http://localhost:4000/cisco-networking-6/">April 18, 2018</a></time></span><span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Yeonggyu Lim">Yeonggyu Lim</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~2 minutes
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://localhost:4000/cisco-networking-6/" rel="bookmark" title="[요약] 후니의 쉽게 쓴 시스코 네트워킹 - 6" itemprop="url">[요약] 후니의 쉽게 쓴 시스코 네트워킹 - 6</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <hr />
+
+<h2 id="-part-11-선이-없는-세상-무선으로의-여행-"><span style="color:blue"> <em>Part 11 선이 없는 세상, 무선으로의 여행</em> </span></h2>
+<h3 id="1-access-point">1. Access Point</h3>
+<ul>
+  <li>한쪽 발은 유선, 한쪽 발은 무선에 양다리 걸치고 서로 연결해주는 역할</li>
+  <li>AP가 있어야 무선통신 가능 =&gt; 무선통신 중이라면 주위에 AP 있을 것임</li>
+  <li>유선네트워크라면 AP의 역할은 허브와 비슷(어느 한 순간에는 한 녀석과만 통신 가능)</li>
+</ul>
+
+<h3 id="2-무선-랜">2. 무선 랜</h3>
+<ul>
+  <li>무선 랜 통신 방식: CSMA/CA(Carrier Sense Multiple Access/Collision Avoidance)</li>
+</ul>
+
+<h3 id="3-무선-랜의-두-가지-모드개인-컴퓨터에-무선-랜-카드-세팅-프로그램에서-설정-가능">3. 무선 랜의 두 가지 모드(개인 컴퓨터에 무선 랜 카드 세팅 프로그램에서 설정 가능)</h3>
+<ul>
+  <li>Ad Hoc Mode(특별한 or 임시변통의 모드)
+    <ul>
+      <li>무선 네트워킹에 꼭 필요한 AP 사용하지 않고, PC에 무선 랜 카드 꽂아 임시변통으로 통신 방식</li>
+      <li>PC들끼리 AP를 통하지 않고 무선으로 통신하는 방식</li>
+      <li>임시변통이므로 권장 X, 소규모 통신만 가능(전달해야 할 파일 있을 때)</li>
+      <li>Service Set
+        <ul>
+          <li>Independent BSS</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Infrastructure Mode
+    <ul>
+      <li>일반적으로 사용하는 AP 사용 무선 통신 모드</li>
+      <li>무선 랜 카드 장착 PC는 데이터를 AP에 전달 -&gt; AP가 데이터 상대방 PC에 전달</li>
+      <li>2 가지 모드의 서비스 방식(Service Set)
+        <ul>
+          <li>BSS(Basic Service Set)
+            <ul>
+              <li>AP 1대를 이용하여 무선 랜 구성하는 방식</li>
+              <li>가정에서 구성되는 무선 랜</li>
+            </ul>
+          </li>
+          <li>ESS(Extended Service Set)
+            <ul>
+              <li>AP 여러 대를 이용해 무선 랜 구성하는 방식</li>
+              <li>넓은 지역 or AP 한 대로 무선 장비 접속 커버하기에 용량 부족할 때</li>
+              <li>회사에서 구성되는 무선 랜</li>
+              <li>주파수 간 간섭 발생 않는 비중첩 채널 사용해야함</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="4-무선-통신에서-인코딩-3가지">4. 무선 통신에서 인코딩 3가지</h3>
+<ul>
+  <li>FHSS(Frequency Hopping Spread Spectrum): 주파수 호핑 확산 스펙트럼 방식
+    <ul>
+      <li>무선 신호를 주파수 채널로 빠르게 바꿔가면서(hopping) 전송하는 방식</li>
+      <li>잡음과 간섭 같은 고질적인 통신 문제에 강점 있는 방식</li>
+    </ul>
+  </li>
+  <li>DSSS(Direct Sequence Spread Spectrum): 직접 시퀀스 확산 스펙트럼
+    <ul>
+      <li>여러 개의 채널 중 하나를 잡고 계속 그 채널로만 전송 하는 방식</li>
+      <li>신호를 매우 작은 전력으로 넓은 대역으로 전송</li>
+      <li>잡음에 영향 적게 받고, 낮은 전력 사용으로 다른 통신에 영향 덜 줌, 보안에 우수</li>
+      <li>최대 11개(한국은 13개) 채널 지원, 이중 비중첩 채널은 3개</li>
+    </ul>
+  </li>
+  <li>OFDM(Orthogonal Frequency Division Multiplexing): 직교 주파수 분할 다중 방식</li>
+</ul>
+
+<h3 id="5-ssidservice-set-identifier">5. SSID(Service Set Identifier)</h3>
+<ul>
+  <li>서비스 셋에서 서로 구분하기 위해 만들어 놓은 ID(32byte)</li>
+  <li>무선 네트워크 안에 있는 무선 장비들은 모두 같은 SSID 가짐</li>
+  <li>무선 네트워크의 이름들(와이파이 이름들)</li>
+  <li>디폴트로는 무선 네트워크에서 100ms마다 SSID와 기타 구성 정보를 Broadcast로 네트워크에 뿌려줌</li>
+  <li>SSID Cloaking: SSID의 Broadcast를 Disable =&gt; SSID(와이파이) 아무나 못 봄</li>
+  <li>WIFI란? Wireless Fidelity
+    <ul>
+      <li>좋은 무선 장비들의 호환성 검증(Hi-Fi: 좋은 오디오에 붙여줌)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="6-무선-네트워크에서의-보안">6. 무선 네트워크에서의 보안</h3>
+<ul>
+  <li>통제 쉽지 않아 보안 중요함 &lt;-&gt; 회사내부 네트워크는 회사에 침입해 케이블 연결해야함</li>
+  <li>2가지 보안 기법
+    <ul>
+      <li>Authentication(인증): 접속 허가 결정</li>
+      <li>Encryption(암호화): 데이터 자체를 암호화</li>
+    </ul>
+  </li>
+  <li>WEP(Wired Equivalent Privacy): 맨 처음 무선 네트워크 사용된 보안 표준
+    <ul>
+      <li>클라이언트 장비(노트북)와 액세스 포인트가 같은 Key값 나눠가짐</li>
+      <li>접속 시도 시에 Key값이 같을 경우에 접속 허락 방식</li>
+      <li>key(40bit)는 Static이므로 바꿔주지 않으면 보안 취약</li>
+      <li>해커가 네트워크 트래픽 캡처 후에 WEP키를 찾아내어 들어올 수 있음, 보안 취약</li>
+    </ul>
+  </li>
+  <li>Cisco
+    <ul>
+      <li>802.1X 사용자 인증 방식 통해 보안 강화</li>
+      <li>username과 password 이용한 방식</li>
+    </ul>
+  </li>
+  <li>WPA(Wi-Fi Protected Access) (표준은 아니지만 많이 씀)
+    <ul>
+      <li>WEP의 보안 약점 해결한 새로운 무선 랜 보안 방식</li>
+      <li>Dynamic 키 방식 추가(키 값이 자동으로 바뀜)</li>
+      <li>TKIP(Temporal Key Integrity Protocol): 강화된 Encryption(암호화) 기법</li>
+    </ul>
+  </li>
+  <li>WPA2: 802.11i (표준)
+    <ul>
+      <li>WPA에 TKIP =&gt; AES(Advanced Encryption Standard Encryption) 방식 사용</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h2 id="참조">참조</h2>
+<ul>
+  <li><a href="http://www.kyobobook.co.kr/search/SearchCommonMain.jsp">후니의 쉽게 쓴 시스코 네트워킹</a></li>
+</ul>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+
+
+<div class="pagination">
+  <ul class="inline-list">
+    
+    
+
+    
+    
+      <li><strong class="current-page">1</strong></li>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+        
+        
+        
+        <li><a href="http://localhost:4000/page2/">2</a></li>
+      
+    
+
+    
+    
+
+    
+      <li><a href="http://localhost:4000/page3/">3</a></li>
+    
+
+    
+    
+      <li><a href="http://localhost:4000/page2/" class="btn">Next</a></li>
+    
+  </ul>
+</div>
+
+
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2018 <a href="/about">Yeonggyu Lim</a>. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-117510353-1', 'auto');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+</script>
+
+
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yeonggyu0128'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+          
+
+</body>
+</html>
